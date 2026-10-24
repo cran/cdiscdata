@@ -1,0 +1,54 @@
+Package: cdiscdata
+Title: Versioned CDISC Standards Reference Data
+Version: 0.2.0
+Authors@R: c(
+    person("Bill", "Denney", email = "wdenney@humanpredictions.com",
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-5759-428X")),
+    person("Clinical Data Interchange Standards Consortium (CDISC)", role = "cph",
+           comment = "Define-XML schema files in inst/extdata/schema (MIT License)"),
+    person("Lex", "Jansen", role = "cph",
+           comment = "Define-XML stylesheets in inst/extdata/stylesheet (MIT License)"),
+    person("National Cancer Institute Enterprise Vocabulary Services", role = "dtc",
+           comment = "CDISC Controlled Terminology (public domain)"))
+Description: Provides versioned reference data for the standards of the
+    Clinical Data Interchange Standards Consortium (CDISC)
+    <https://www.cdisc.org/standards>: the CDISC Controlled Terminology (CT)
+    for the Study Data Tabulation Model (SDTM) and the Analysis Data Model
+    (ADaM); variable metadata for the SDTM model and for the families of the
+    SDTM Implementation Guide (SDTMIG), the Standard for Exchange of
+    Nonclinical Data Implementation Guide (SENDIG), and the ADaM
+    Implementation Guide (ADaMIG); the Clinical Data Acquisition Standards
+    Harmonization (CDASH) model and implementation guide; the Questionnaires,
+    Ratings, and Scales (QRS) supplements; and the Define-XML schemas, written
+    in the Extensible Markup Language (XML) Schema Definition (XSD) language,
+    with Extensible Stylesheet Language Transformations (XSLT) stylesheets
+    for them. A validity-date design stores every historical CT version
+    compactly, without duplicating rows. Intended as a shared data
+    dependency for pharmaverse-aligned packages <https://pharmaverse.org>.
+License: MIT + file LICENSE
+Depends: R (>= 4.1.0)
+Suggests: testthat (>= 3.0.0), xml2, withr, covr, pkgdown, knitr,
+        rmarkdown, callr
+LazyData: true
+LazyDataCompression: xz
+Encoding: UTF-8
+Language: en-US
+Config/testthat/edition: 3
+URL: https://github.com/humanpred/cdiscdata,
+        https://humanpred.github.io/cdiscdata/
+BugReports: https://github.com/humanpred/cdiscdata/issues
+VignetteBuilder: knitr
+Config/roxygen2/version: 8.1.0
+NeedsCompilation: no
+Packaged: 2026-10-15 21:46:07 UTC; bill
+Author: Bill Denney [aut, cre] (ORCID: <https://orcid.org/0000-0002-5759-428X>),
+  Clinical Data Interchange Standards Consortium (CDISC) [cph]
+    (Define-XML schema files in inst/extdata/schema (MIT License)),
+  Lex Jansen [cph] (Define-XML stylesheets in inst/extdata/stylesheet
+    (MIT License)),
+  National Cancer Institute Enterprise Vocabulary Services [dtc] (CDISC
+    Controlled Terminology (public domain))
+Maintainer: Bill Denney <wdenney@humanpredictions.com>
+Repository: CRAN
+Date/Publication: 2026-10-24 16:40:09 UTC
